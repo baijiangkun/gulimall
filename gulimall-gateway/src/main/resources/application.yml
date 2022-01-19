@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: baidu_route
+          uri: http://www.zhihu.com
+          predicates:
+            - Query=url,zhihu
